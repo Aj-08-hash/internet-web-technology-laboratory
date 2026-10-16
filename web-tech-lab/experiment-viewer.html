@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Web Technology Laboratory</title>
+
+    <link rel="stylesheet"
+          href="experiment-viewer.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="viewer-header">
+
+        <h1>WEB TECHNOLOGY LABORATORY</h1>
+
+        <p id="experiment-title">
+            Loading Experiment...
+        </p>
+
+    </header>
+
+
+    <!-- MAIN WORKSPACE -->
+
+    <main class="workspace">
+
+
+        <!-- SOURCE CODE PANEL -->
+
+        <section class="source-panel">
+
+            <div class="panel-header">
+
+                <span>SOURCE CODE</span>
+
+                <span class="readonly">
+                    🔒 READ ONLY
+                </span>
+
+            </div>
+
+
+            <!-- FILE TABS -->
+
+            <div class="file-tabs">
+
+                <button class="file-tab active"
+                        data-file="html">
+                    HTML
+                </button>
+
+                <button class="file-tab"
+                        data-file="css"
+                        id="css-tab">
+                    CSS
+                </button>
+
+                <button class="file-tab"
+                        data-file="js"
+                        id="js-tab">
+                    JavaScript
+                </button>
+
+            </div>
+
+
+            <!-- SOURCE -->
+
+            <pre id="source-code"><code>
+Loading source code...
+            </code></pre>
+
+        </section>
+
+
+
+        <!-- OUTPUT PANEL -->
+
+        <section class="output-panel">
+
+            <div class="panel-header">
+
+                <span>OUTPUT</span>
+
+            </div>
+
+
+            <iframe
+                id="experiment-output"
+                title="Experiment Output">
+            </iframe>
+
+        </section>
+
+    </main>
+
+
+    <!-- CONTROLS -->
+
+    <div class="controls">
+
+        <button id="run-button">
+            ▶ RUN CODE
+        </button>
+
+        <button id="reset-button">
+            ↻ RESET
+        </button>
+
+        <button id="back-button">
+            ← BACK TO EXPERIMENTS
+        </button>
+
+    </div>
+
+
+    <script src="experiment-viewer.js"></script>
+
+</body>
+
+</html>

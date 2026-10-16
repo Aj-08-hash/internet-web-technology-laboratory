@@ -1,0 +1,74 @@
+students{
+    display:block;
+    font-family:Arial, sans-serif;
+    background:#eef4ff;
+    padding:20px;
+}
+
+student{
+    display:block;
+    background:white;
+    border:2px solid #1565c0;
+    border-radius:8px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+student:hover{
+    background:#e3f2fd;
+}
+
+enrollment,
+univroll,
+name,
+college,
+branch,
+joiningyear,
+email{
+    display:block;
+    margin:5px 0;
+    font-size:16px;
+}
+
+enrollment::before{
+    content:"Enrollment No: ";
+    font-weight:bold;
+    color:#0d47a1;
+}
+
+univroll::before{
+    content:"University Roll No: ";
+    font-weight:bold;
+    color:#0d47a1;
+}
+
+name::before{
+    content:"Name: ";
+    font-weight:bold;
+    color:#0d47a1;
+}
+
+college::before{
+    content:"College: ";
+    font-weight:bold;
+    color:#0d47a1;
+}
+
+branch::before{
+    content:"Branch: ";
+    font-weight:bold;
+    color:#0d47a1;
+}
+
+joiningyear::before{
+    content:"Year of Joining: ";
+    font-weight:bold;
+    color:#0d47a1;
+}
+
+email::before{
+    content:"Email: ";
+    font-weight:bold;
+    color:#0d47a1;
+}

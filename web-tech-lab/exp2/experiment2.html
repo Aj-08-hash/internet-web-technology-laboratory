@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Experiment 2 - JavaScript</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript">
+
+function fibonacci() {
+
+    var n = parseInt(prompt("Enter the value of n:"));
+
+    var a = 0;
+    var b = 1;
+    var temp;
+    var result = "First " + n + " Fibonacci Numbers:\n\n";
+
+    for(var i = 0; i < n; i++) {
+
+        result += a + " ";
+
+        temp = a + b;
+        a = b;
+        b = temp;
+    }
+
+    alert(result);
+}
+
+function squareTable() {
+
+    var n = parseInt(prompt("Enter the value of n:"));
+
+    var result = "Number\tSquare\n\n";
+
+    for(var i = 1; i <= n; i++) {
+
+        result += i + "\t" + (i*i) + "\n";
+    }
+
+    alert(result);
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Experiment 2 - JavaScript Programs</h1>
+
+<button onclick="fibonacci()">Fibonacci Series</button>
+
+<br/><br/>
+
+<button onclick="squareTable()">Number and Square Table</button>
+
+<br/><br/>
+
+
+</body>
+
+</html>

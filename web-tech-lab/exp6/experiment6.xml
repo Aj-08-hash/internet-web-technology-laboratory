@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<students>
+
+    <student>
+        <enrollment>CD4170</enrollment>
+        <univroll>301001</univroll>
+        <name>Ashish Jaiswal</name>
+        <college>CSVTU Engineering College</college>
+        <branch>CSE</branch>
+        <joiningyear>2023-24</joiningyear>
+        <email>ashishjaiswal@gmail.com</email>
+    </student>
+
+    <student>
+        <enrollment>CD4175</enrollment>
+        <univroll>301002</univroll>
+        <name>Rahul Chandra</name>
+        <college>CSVTU Engineering College</college>
+        <branch>CSE</branch>
+        <joiningyear>2022</joiningyear>
+        <email>rahul@gmail.com</email>
+    </student>
+
+    <student>
+        <enrollment>CD4174</enrollment>
+        <univroll>301003</univroll>
+        <name>Rishabh Gupta</name>
+        <college>CSVTU Engineering College</college>
+        <branch>IT</branch>
+        <joiningyear>2022</joiningyear>
+        <email>rishabhgupta@gmail.com</email>
+    </student>
+
+    <student>
+        <enrollment>22011004</enrollment>
+        <univroll>301004</univroll>
+        <name>Amit Kumar</name>
+        <college>CSVTU Engineering College</college>
+        <branch>ECE</branch>
+        <joiningyear>2022</joiningyear>
+        <email>amit@example.com</email>
+    </student>
+
+    <student>
+        <enrollment>22011005</enrollment>
+        <univroll>301005</univroll>
+        <name>Vivek gupta</name>
+        <college>CSVTU Engineering College</college>
+        <branch>ME</branch>
+        <joiningyear>2022</joiningyear>
+        <email>vivek@example.com</email>
+    </student>
+
+    <student>
+        <enrollment>22011006</enrollment>
+        <univroll>301006</univroll>
+        <name>Rohan Patel</name>
+        <college>CSVTU Engineering College</college>
+        <branch>CE</branch>
+        <joiningyear>2022</joiningyear>
+        <email>rohan@example.com</email>
+    </student>
+
+    <student>
+        <enrollment>22011007</enrollment>
+        <univroll>301007</univroll>
+        <name>Sneha Gupta</name>
+        <college>CSVTU Engineering College</college>
+        <branch>CSE</branch>
+        <joiningyear>2022</joiningyear>
+        <email>sneha@example.com</email>
+    </student>
+
+    <student>
+        <enrollment>22011008</enrollment>
+        <univroll>301008</univroll>
+        <name>Vikash Yadav</name>
+        <college>CSVTU Engineering College</college>
+        <branch>EEE</branch>
+        <joiningyear>2022</joiningyear>
+        <email>vikash@example.com</email>
+    </student>
+
+    <student>
+        <enrollment>22011009</enrollment>
+        <univroll>301009</univroll>
+        <name>Anjali Mishra</name>
+        <college>CSVTU Engineering College</college>
+        <branch>IT</branch>
+        <joiningyear>2022</joiningyear>
+        <email>anjali@example.com</email>
+    </student>
+
+    <student>
+        <enrollment>22011010</enrollment>
+        <univroll>301010</univroll>
+        <name>Karan Sahu</name>
+        <college>CSVTU Engineering College</college>
+        <branch>CSE</branch>
+        <joiningyear>2022</joiningyear>
+        <email>karan@example.com</email>
+    </student>
+
+</students>

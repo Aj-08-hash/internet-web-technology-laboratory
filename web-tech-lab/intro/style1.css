@@ -1,0 +1,289 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    position: relative;
+    padding: 60px 30px;
+}
+
+/* ==========================
+      Background Circles
+========================== */
+
+.bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: 0;
+}
+
+.one {
+    width: 280px;
+    height: 280px;
+    background: rgba(255, 255, 255, .15);
+    top: 5%;
+    left: 8%;
+}
+
+.two {
+    width: 350px;
+    height: 350px;
+    background: rgba(0, 255, 255, .15);
+    bottom: 5%;
+    right: 8%;
+}
+
+/* ==========================
+      Cards Container
+========================== */
+
+.container {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* ==========================
+      Flip Card
+========================== */
+
+.card {
+
+    width: 320px;
+    height: 430px;
+
+    perspective: 1200px;
+
+    flex: 0 0 auto;
+}
+
+/* Flip only current card */
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-inner {
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    transition: transform .8s ease;
+
+    transform-style: preserve-3d;
+
+}
+
+/* ==========================
+      Shared Card Design
+========================== */
+
+.card-front,
+.card-back {
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: #fff;
+
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+    background: rgba(255, 255, 255, .10);
+
+    border: 1px solid rgba(255, 255, 255, .25);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, .25);
+
+    transition: .4s;
+
+}
+
+/* Beautiful hover glow */
+
+.card:hover .card-front,
+.card:hover .card-back {
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, .35),
+        0 0 30px rgba(255, 255, 255, .15);
+
+}
+
+/* ==========================
+      Front
+========================== */
+
+.card-front img {
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid rgba(255, 255, 255, .35);
+
+    margin-bottom: 18px;
+
+}
+
+.card-front h2 {
+
+    font-size: 28px;
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+.details{
+    width:100%;
+    margin-top:18px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:100px 1fr;
+    align-items:center;
+    margin:12px 0;
+    padding:8px 12px;
+    border-radius:10px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.label{
+    font-weight:600;
+    color:#fff;
+}
+
+.value{
+    color:#f5f5f5;
+}
+
+
+/* ==========================
+      Back
+========================== */
+
+.card-back {
+
+    transform: rotateY(180deg);
+
+}
+
+.card-back h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+}
+
+.card-back p {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+
+}
+
+.card-back button {
+
+    border: none;
+
+    padding: 13px 30px;
+
+    border-radius: 40px;
+
+    background: #ffffff;
+
+    color: #4e54c8;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.card-back button:hover {
+
+    transform: scale(1.08);
+
+    background: #ececec;
+
+}
+
+/* ==========================
+      Responsive
+========================== */
+
+@media(max-width:1100px) {
+
+    .container {
+
+        gap: 30px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .container {
+
+        flex-direction: column;
+
+    }
+
+    .card {
+
+        width: 90%;
+        max-width: 340px;
+
+    }
+
+}

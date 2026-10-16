@@ -1,0 +1,177 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #eef4ff;
+
+}
+
+.student-name {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 25px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #123b8f;
+
+}
+
+.container {
+
+    width: 85%;
+
+    max-width: 900px;
+
+    margin: 80px auto;
+
+    text-align: center;
+
+}
+
+h1 {
+
+    color: #123b8f;
+
+}
+
+h2 {
+
+    color: #315ec7;
+
+}
+
+.card,
+.table-card {
+
+    background: white;
+
+    padding: 30px;
+
+    margin: 25px 0;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px #bbb;
+
+}
+
+input {
+
+    padding: 12px;
+
+    margin: 8px;
+
+    font-size: 16px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 6px;
+
+}
+
+button {
+
+    padding: 12px 20px;
+
+    margin: 8px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #1769e0;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background: #0d47a1;
+
+}
+
+.delete {
+
+    background: #d32f2f;
+
+}
+
+.delete:hover {
+
+    background: #9a0007;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+th,
+td {
+
+    padding: 14px;
+
+    border: 1px solid #aaa;
+
+}
+
+th {
+
+    background: #1769e0;
+
+    color: white;
+
+}
+
+tr:nth-child(even) {
+
+    background: #eef4ff;
+
+}
+
+.back {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: #1769e0;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+}
+
+footer {
+
+    margin-top: 70px;
+
+    padding: 25px;
+
+    background: #132b82;
+
+    color: white;
+
+    text-align: center;
+
+}

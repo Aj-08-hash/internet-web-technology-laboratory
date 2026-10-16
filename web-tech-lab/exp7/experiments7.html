@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Experiment 7 - Server Information</title>
+
+    <link rel="stylesheet" href="exp7.css">
+
+</head>
+
+<body>
+
+    <div class="student-name">
+        Ashish Jaiswal
+    </div>
+
+    <div class="container">
+
+        <h1>Experiment 7</h1>
+
+        <h2>Server Information & Command Execution</h2>
+
+        <!-- Part A -->
+
+        <section class="card">
+
+            <h3>Part A - Server Information</h3>
+
+            <button onclick="showServerInfo()">
+                Display Server Information
+            </button>
+
+            <div id="serverInfo"></div>
+
+        </section>
+
+
+        <!-- Part B -->
+
+        <section class="card">
+
+            <h3>Part B - UNIX Command</h3>
+
+            <p>
+                Enter a supported UNIX command:
+            </p>
+
+            <input
+                type="text"
+                id="command"
+                placeholder="Example: date"
+            >
+
+            <button onclick="executeCommand()">
+                Execute Command
+            </button>
+
+            <pre id="commandOutput"></pre>
+
+            <p class="note">
+                Supported commands:
+                date, pwd, whoami, hostname, echo
+            </p>
+
+        </section>
+
+<!-- 
+        <a href="../index.html" class="back">
+            ← Back to Home
+        </a> -->
+
+    </div>
+
+    <footer>
+        web technology developed by Ashish jaiswal
+    </footer>
+
+    <script src="exp7.js"></script>
+
+</body>
+
+</html>

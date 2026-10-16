@@ -1,0 +1,181 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #eef4ff;
+
+}
+
+.student-name {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 25px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #123b8f;
+
+}
+
+.container {
+
+    width: 85%;
+
+    max-width: 1000px;
+
+    margin: 70px auto 40px;
+
+    text-align: center;
+
+}
+
+h1 {
+
+    color: #123b8f;
+
+}
+
+h2 {
+
+    color: #315ec7;
+
+}
+
+.card {
+
+    background: white;
+
+    margin: 25px 0;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px #bbb;
+
+}
+
+.card h3 {
+
+    color: #174ea6;
+
+}
+
+button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #1769e0;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+button:hover {
+
+    background: #0d47a1;
+
+}
+
+input {
+
+    width: 60%;
+
+    padding: 12px;
+
+    margin: 10px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+}
+
+#serverInfo {
+
+    margin-top: 20px;
+
+    text-align: left;
+
+}
+
+.info {
+
+    padding: 12px;
+
+    margin: 5px;
+
+    background: #eef5ff;
+
+    border-radius: 5px;
+
+}
+
+pre {
+
+    background: #111;
+
+    color: #00ff66;
+
+    padding: 20px;
+
+    text-align: left;
+
+    min-height: 30px;
+
+    border-radius: 8px;
+
+}
+
+.note {
+
+    color: #666;
+
+}
+
+.back {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: #1769e0;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+}
+
+footer {
+
+    background: #132b82;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+}

@@ -1,0 +1,143 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #eef4ff;
+
+}
+
+.student-name {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 25px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #123b8f;
+
+}
+
+.container {
+
+    width: 600px;
+
+    margin: 80px auto;
+
+    text-align: center;
+
+}
+
+h1 {
+
+    color: #123b8f;
+
+}
+
+h2 {
+
+    color: #315ec7;
+
+}
+
+.card {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px #bbb;
+
+}
+
+input {
+
+    width: 80%;
+
+    padding: 12px;
+
+    margin: 20px 0;
+
+    font-size: 16px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 6px;
+
+}
+
+button {
+
+    padding: 12px 25px;
+
+    background: #1769e0;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background: #0d47a1;
+
+}
+
+#result {
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #1769e0;
+
+}
+
+.back {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 12px 20px;
+
+    background: #1769e0;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+}
+
+footer {
+
+    margin-top: 100px;
+
+    padding: 25px;
+
+    background: #132b82;
+
+    color: white;
+
+    text-align: center;
+
+}

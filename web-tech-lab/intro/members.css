@@ -1,0 +1,663 @@
+/* ==============================
+   GOOGLE FONT
+================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==============================
+   RESET
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==============================
+   BODY
+================================= */
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+
+    position: relative;
+
+    padding: 50px 25px;
+}
+
+/* ==============================
+   BACKGROUND CIRCLES
+================================= */
+.bg-circle {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.one {
+    width: 280px;
+    height: 280px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    top: 5%;
+    left: 8%;
+}
+
+.two {
+    width: 350px;
+    height: 350px;
+
+    background: rgba(0, 255, 255, 0.15);
+
+    bottom: 5%;
+    right: 8%;
+}
+
+/* ==============================
+   CARDS CONTAINER
+================================= */
+.container {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 1400px;
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 320px)
+    );
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+/* ==============================
+   FLIP CARD
+================================= */
+.card {
+    width: 100%;
+    height: 430px;
+
+    perspective: 1200px;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    transition: transform 0.8s ease;
+
+    transform-style: preserve-3d;
+}
+
+/* ==============================
+   FRONT & BACK
+================================= */
+.card-front,
+.card-back {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: #fff;
+
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.25);
+
+    transition: 0.4s;
+}
+
+/* ==============================
+   HOVER GLOW
+================================= */
+.card:hover .card-front,
+.card:hover .card-back {
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(255, 255, 255, 0.15);
+}
+
+/* ==============================
+   FRONT IMAGE
+================================= */
+.card-front img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid rgba(255, 255, 255, 0.35);
+
+    margin-bottom: 18px;
+}
+
+/* ==============================
+   FRONT HEADING
+================================= */
+.card-front h2 {
+    font-size: 28px;
+    font-weight: 600;
+
+    margin-bottom: 18px;
+}
+
+/* ==============================
+   DETAILS
+================================= */
+.details {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.row {
+    display: grid;
+
+    grid-template-columns: 90px 1fr;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 10px 0;
+
+    padding: 8px 12px;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.label {
+    font-weight: 600;
+    color: #fff;
+}
+
+.value {
+    color: #f5f5f5;
+
+    word-break: break-word;
+}
+
+/* ==============================
+   BACK
+================================= */
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card-back h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.card-back p {
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+}
+
+/* ==============================
+   BUTTON
+================================= */
+.card-back button {
+    border: none;
+
+    padding: 13px 30px;
+
+    border-radius: 40px;
+
+    background: #fff;
+
+    color: #4e54c8;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.card-back button:hover {
+    transform: scale(1.08);
+
+    background: #ececec;
+}
+
+/* ==================================================
+   LARGE DESKTOP
+   1400px+
+================================================== */
+@media (min-width: 1400px) {
+
+    body {
+        padding: 60px 50px;
+    }
+
+    .container {
+        gap: 50px;
+    }
+
+    .card {
+        width: 320px;
+        height: 430px;
+    }
+}
+
+/* ==================================================
+   LAPTOP
+   1024px - 1399px
+================================================== */
+@media (max-width: 1200px) {
+
+    body {
+        padding: 50px 30px;
+    }
+
+    .container {
+        grid-template-columns: repeat(
+            3,
+            minmax(260px, 320px)
+        );
+
+        gap: 30px;
+    }
+
+    .card {
+        height: 420px;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 25px;
+    }
+}
+
+/* ==================================================
+   SMALL LAPTOP / TABLET LANDSCAPE
+   769px - 1023px
+================================================== */
+@media (max-width: 1023px) {
+
+    body {
+        align-items: flex-start;
+        padding: 50px 25px;
+    }
+
+    .container {
+        grid-template-columns: repeat(
+            2,
+            minmax(280px, 320px)
+        );
+
+        gap: 30px;
+    }
+
+    .card {
+        height: 420px;
+    }
+
+    .one {
+        width: 220px;
+        height: 220px;
+    }
+
+    .two {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+/* ==================================================
+   TABLET PORTRAIT
+   600px - 768px
+================================================== */
+@media (max-width: 768px) {
+
+    body {
+        padding: 40px 20px;
+    }
+
+    .container {
+        grid-template-columns: repeat(
+            2,
+            minmax(250px, 1fr)
+        );
+
+        gap: 25px;
+    }
+
+    .card {
+        height: 400px;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .card-front img {
+        width: 105px;
+        height: 105px;
+    }
+
+    .card-front h2,
+    .card-back h2 {
+        font-size: 24px;
+    }
+
+    .card-back p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .row {
+        grid-template-columns: 80px 1fr;
+        font-size: 13px;
+    }
+
+    .one {
+        width: 180px;
+        height: 180px;
+    }
+
+    .two {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* ==================================================
+   MOBILE
+   481px - 599px
+================================================== */
+@media (max-width: 599px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+
+        width: 100%;
+
+        gap: 25px;
+    }
+
+    .card {
+        width: min(100%, 340px);
+        height: 420px;
+
+        margin: 0 auto;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 25px;
+    }
+
+    .card-front img {
+        width: 105px;
+        height: 105px;
+    }
+
+    .card-front h2,
+    .card-back h2 {
+        font-size: 25px;
+    }
+
+    .row {
+        grid-template-columns: 90px 1fr;
+
+        font-size: 14px;
+
+        padding: 8px 10px;
+    }
+
+    .card-back p {
+        font-size: 14px;
+    }
+
+    .one {
+        width: 150px;
+        height: 150px;
+
+        top: 3%;
+        left: -50px;
+    }
+
+    .two {
+        width: 180px;
+        height: 180px;
+
+        bottom: 3%;
+        right: -50px;
+    }
+}
+
+/* ==================================================
+   SMALL MOBILE
+   320px - 480px
+================================================== */
+@media (max-width: 480px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+    .container {
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 330px;
+        height: 410px;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 20px;
+
+        border-radius: 20px;
+    }
+
+    .card-front img {
+        width: 90px;
+        height: 90px;
+
+        margin-bottom: 12px;
+    }
+
+    .card-front h2,
+    .card-back h2 {
+        font-size: 22px;
+
+        margin-bottom: 12px;
+    }
+
+    .details {
+        margin-top: 10px;
+    }
+
+    .row {
+        grid-template-columns: 75px 1fr;
+
+        gap: 5px;
+
+        margin: 7px 0;
+
+        padding: 7px 8px;
+
+        font-size: 12px;
+    }
+
+    .card-back p {
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        margin-bottom: 20px;
+    }
+
+    .card-back button {
+        padding: 11px 25px;
+
+        font-size: 13px;
+    }
+}
+
+/* ==================================================
+   VERY SMALL PHONES
+   320px and below
+================================================== */
+@media (max-width: 340px) {
+
+    body {
+        padding: 20px 8px;
+    }
+
+    .card {
+        height: 390px;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 16px;
+    }
+
+    .card-front img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card-front h2,
+    .card-back h2 {
+        font-size: 20px;
+    }
+
+    .row {
+        grid-template-columns: 65px 1fr;
+
+        font-size: 11px;
+    }
+}
+
+/* ==================================================
+   LANDSCAPE MOBILE
+================================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+
+    body {
+        align-items: flex-start;
+
+        padding: 25px 15px;
+    }
+
+    .container {
+        grid-template-columns: repeat(
+            2,
+            minmax(260px, 320px)
+        );
+
+        gap: 20px;
+    }
+
+    .card {
+        height: 380px;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 18px;
+    }
+
+    .card-front img {
+        width: 75px;
+        height: 75px;
+
+        margin-bottom: 8px;
+    }
+
+    .card-front h2,
+    .card-back h2 {
+        font-size: 20px;
+    }
+
+    .row {
+        margin: 5px 0;
+        padding: 5px 8px;
+    }
+
+    .card-back p {
+        font-size: 12px;
+        line-height: 1.5;
+
+        margin-bottom: 15px;
+    }
+}
+
+/* ==================================================
+   REDUCE ANIMATION FOR USERS WHO PREFER IT
+================================================== */
+@media (prefers-reduced-motion: reduce) {
+
+    .card-inner {
+        transition: none;
+    }
+
+    .card-back button {
+        transition: none;
+    }
+}

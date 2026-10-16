@@ -1,0 +1,107 @@
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #eef4ff;
+
+}
+
+.student-name {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 25px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #123b8f;
+
+}
+
+.container {
+
+    text-align: center;
+
+    margin-top: 100px;
+
+}
+
+h1 {
+
+    color: #123b8f;
+
+}
+
+h2 {
+
+    color: #315ec7;
+
+}
+
+#clock {
+
+    display: inline-block;
+
+    margin: 40px;
+
+    padding: 35px 60px;
+
+    background: #111;
+
+    color: #00ff66;
+
+    font-size: 60px;
+
+    font-family: monospace;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px #555;
+
+}
+
+#date {
+
+    font-size: 20px;
+
+    color: #333;
+
+}
+
+.back {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 12px 20px;
+
+    background: #1769e0;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+}
+
+footer {
+
+    margin-top: 100px;
+
+    padding: 25px;
+
+    background: #132b82;
+
+    color: white;
+
+    text-align: center;
+
+}
